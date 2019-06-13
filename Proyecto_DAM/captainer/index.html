@@ -1,0 +1,100 @@
+<!--Importaciones principales del proyecto en el DOM-->
+
+<!doctype html> 
+<html lang="es">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <script>
+    (function titleScroller(text) {
+      document.title = text;
+      setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+      }, 100);
+    }
+      ("Captainer: Deployer Services · "));
+
+    if (document.addEventListener) { // IE >= 9; other browsers
+      document.addEventListener('contextmenu', function (e) {
+        alert("Deja el dedito fuera del clic derechito"); //Mensaje que aparece en caso de pulsar el clic derecho del raton
+        e.preventDefault();
+      }, false);
+    } else { // IE < 9
+      document.attachEvent('oncontextmenu', function () {
+        alert("Tu Internet Explorer del paleolitico no soporta el clic derecho. Llama a Bill Gates");
+        window.event.returnValue = false;
+      });
+    }
+
+  </script>
+  <script>
+
+    var isopen = true;
+
+   //Animacion de la barra lateral de la aplicacion
+
+
+    function openNav() {
+
+      if (isopen) {
+
+        closeNav();
+
+      } else {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+        document.getElementById("abrir").style.marginLeft = "0px";
+      }
+      isopen = !isopen;
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("abrir").style.marginLeft = "-158px";
+    }
+  </script>
+
+  <!--Mas importaciones de librerias de fuentes y estilos graficos-->
+
+
+  <meta charset="utf-8">
+  <title>Captainer by Prisma SG</title>
+  <base href="/captainer/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/logoicon.png" alt="icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Cabin Condensed' rel='stylesheet'>
+
+  <meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<link rel="stylesheet" href="styles.97aa336b28d847f3b99e.css"></head>
+
+<body>
+  <app-root></app-root>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.c5dd28b362270c767b34.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.34d6ffa8698c02ddecaf.js"></script></body>
+
+</html>
