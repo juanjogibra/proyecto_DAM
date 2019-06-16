@@ -1,5 +1,5 @@
 <div class="header">
-  <h1>Leeme.html</h1>
+  <h1>Leeme</h1>
   <p>Acerca de este fichero:</p>
 </div>
 <div class="content">
